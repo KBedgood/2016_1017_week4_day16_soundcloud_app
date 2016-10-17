@@ -1,0 +1,66 @@
+@import "mixins";
+
+// Roboto:300,300i,400,500,700
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-family: Roboto 400;
+	font-size: 24px;
+}
+
+// font-family: 'Monoton', cursive;
+// .container-fluid,
+// .row,
+// .col {
+//             background-color: black;
+//             text-align: center;
+// }
+
+// .currentTime {
+//             font-family: 'Fredericka the Great', cursive;
+//             letter-spacing: .09em;
+//             display: block;
+//             text-align: center;
+//             font-size: 100px;
+//             color: white;
+//             margin-top: 80px;
+// }
+
+
+// .button {
+//             font-size: 11px;
+//             letter-spacing: .2em;
+//             color: white;
+//             margin: 0px auto;
+//             // display: block;
+//             background-color: #E43D96;
+//             padding: 8px;
+//             padding-left: 18px;
+//             padding-right: 18px;
+// }
+
+// a {
+//             color: white;
+//       }
+
+// a:hover {
+//             color: lighten(#E43D96, 15);
+//             text-decoration: none;
+//       }
+
+
+.footer {
+            @include footer();
+}
+
+// @media (max-width: 600px) {
+//             .currentTime {
+//                         font-size: 44px;
+//             }
+//             .footer {
+//                         font-size: 9px;
+//             }
+// }
