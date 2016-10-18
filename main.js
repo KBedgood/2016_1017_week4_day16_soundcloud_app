@@ -1,8 +1,9 @@
-$("xxx").on("click"), function(e) {
-    var xxx = $("xxx").val();
-
-}
-
+$("body").on("click" , ".trackArtwork", function(e) {
+    var trackId = this.id;
+    var streamURL = `https://api.soundcloud.com/tracks/${trackId}/stream?client_id=03e4633e2d85874a921380e47cac705d`;
+    console.log(streamURL);
+    $("#player").attr("src" , streamURL);
+});
 
 
 $("button").on("click", function(e) {
@@ -19,14 +20,12 @@ $("button").on("click", function(e) {
 
                     // Loop over our array to get access to each day.
                     result.forEach(function(track) {
-                        // Get the icon url for this day
-                        var iconUrl = `xxx`;
 
                         // Put the search results info into our page.
                         $("#searchResultsGoHere").append(`
 		<div class="music col-md-4">
 		<h3></h3>
-		<img src="${track.artwork_url}">
+		<img id=${track.id} class="trackArtwork" src="${track.artwork_url}">
 		<h3>Song Title:<br>${track.title}</h3>
 		</div>
 		`)
