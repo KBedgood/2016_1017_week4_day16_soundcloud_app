@@ -1,0 +1,59 @@
+/*Mixin Examples*/
+/*@include center()*/
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.main {
+  min-height: 323px;
+  background-color: #780096;
+  text-align: center;
+  color: white; }
+  .main h1 {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 117px;
+    padding-top: 16px; }
+
+h2 {
+  font-family: Roboto;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 27px;
+  margin-top: -16px;
+  padding-right: 8px; }
+
+.music {
+  display: inline-block; }
+
+#search {
+  margin-top: 38px;
+  color: #780096;
+  padding-left: 10px; }
+
+.button {
+  color: #780096;
+  margin-left: 10px; }
+
+.music h3 {
+  font-size: 13px;
+  line-height: 18px; }
+
+.search {
+  text-align: center;
+  margin-top: 18px; }
+
+.results h1 {
+  font-size: 12px; }
+
+.seekResults h3 {
+  font-size: 14px; }
+
+img {
+  max-width: 100%; }
+
+.footer {
+  font-family: helvetica, serif;
+  font-size: 12px;
+  margin-top: 64px;
+  color: grey;
+  text-align: center; }

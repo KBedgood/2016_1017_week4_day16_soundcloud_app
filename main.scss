@@ -1,66 +1,112 @@
-@import "mixins";
+            @import "mixins";
+            // Roboto:300,300i,400,500,700
+            body {
+                        font-family: 'Roboto', sans-serif;
+            }
+            
+            .main {
+                        min-height: 323px;
+                        background-color: #780096;
+                        text-align: center;
+                        color: white;
 
-// Roboto:300,300i,400,500,700
-
-body {
-	font-family: 'Roboto', sans-serif;
+                        h1 {
+                                    font-family: Roboto;
+                                    font-weight: 300;
+                                    font-size: 117px;
+                                    padding-top: 16px;
+                        }
+            }
+            
+            h2 {
+                        font-family: Roboto;
+                        font-weight: 300;
+                        letter-spacing: 1px;
+                        font-size: 27px;
+                        margin-top: -16px;
+                        padding-right: 8px;
+            }
+            
+.music { 
+display: inline-block
 }
 
-h1 {
-	font-family: Roboto 400;
-	font-size: 24px;
+#search {
+	margin-top: 38px;
+	color: #780096;
+	padding-left: 10px;
 }
 
-// font-family: 'Monoton', cursive;
-// .container-fluid,
-// .row,
-// .col {
-//             background-color: black;
-//             text-align: center;
-// }
-
-// .currentTime {
-//             font-family: 'Fredericka the Great', cursive;
-//             letter-spacing: .09em;
-//             display: block;
-//             text-align: center;
-//             font-size: 100px;
-//             color: white;
-//             margin-top: 80px;
-// }
-
-
-// .button {
-//             font-size: 11px;
-//             letter-spacing: .2em;
-//             color: white;
-//             margin: 0px auto;
-//             // display: block;
-//             background-color: #E43D96;
-//             padding: 8px;
-//             padding-left: 18px;
-//             padding-right: 18px;
-// }
-
-// a {
-//             color: white;
-//       }
-
-// a:hover {
-//             color: lighten(#E43D96, 15);
-//             text-decoration: none;
-//       }
-
-
-.footer {
-            @include footer();
+.button {
+	color: #780096;
+	margin-left: 10px;
 }
 
-// @media (max-width: 600px) {
-//             .currentTime {
-//                         font-size: 44px;
-//             }
-//             .footer {
-//                         font-size: 9px;
-//             }
-// }
+            .music h3 {
+                        font-size: 13px;
+                        line-height: 18px;
+            }
+            
+            .search {
+                        text-align: center;
+                        margin-top: 18px;
+            }
+
+            .results h1 {
+            	font-size: 12px;
+            }
+
+            .seekResults h3 {
+                        	font-size: 14px;	
+            }
+            
+            img {
+                        max-width: 100%;
+            }
+            
+            // font-family: 'Monoton', cursive;
+            // .container-fluid,
+            // .row,
+            // .col {
+            //             background-color: black;
+            //             text-align: center;
+            // }
+            // .currentTime {
+            //             font-family: 'Fredericka the Great', cursive;
+            //             letter-spacing: .09em;
+            //             display: block;
+            //             text-align: center;
+            //             font-size: 100px;
+            //             color: white;
+            //             margin-top: 80px;
+            // }
+            // .button {
+            //             font-size: 11px;
+            //             letter-spacing: .2em;
+            //             color: white;
+            //             margin: 0px auto;
+            //             // display: block;
+            //             background-color: #E43D96;
+            //             padding: 8px;
+            //             padding-left: 18px;
+            //             padding-right: 18px;
+            // }
+            // a {
+            //             color: white;
+            //       }
+            // a:hover {
+            //             color: lighten(#E43D96, 15);
+            //             text-decoration: none;
+            //       }
+            .footer {
+                        @include footer();
+            }
+            
+            // @media (max-width: 600px) {
+            //             .currentTime {
+            //                         font-size: 44px;
+            //             }
+            //             .footer {
+            //                         font-size: 9px;
+            //             }
+            // }
