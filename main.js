@@ -13,7 +13,7 @@ $(document).ready(function() {
     var search = $("#search").val();
 
     $.ajax({
-      url: "http://api.soundcloud.com/tracks/?client_id=03e4633e2d85874a921380e47cac705d&q=${search}",
+      url: "https://api.soundcloud.com/tracks/?client_id=03e4633e2d85874a921380e47cac705d&q=${search}",
       success: function(result) {
         // Assign the data variable to an array that we will loop over.
         // Clear out any previous data.
